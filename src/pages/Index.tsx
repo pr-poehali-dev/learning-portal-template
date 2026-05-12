@@ -6,8 +6,10 @@ import WebinarsPage from "@/components/WebinarsPage";
 import ProfilePage from "@/components/ProfilePage";
 import AdaptationPage from "@/components/AdaptationPage";
 import InstructionsPage from "@/components/InstructionsPage";
+import MentorDashboard from "@/components/MentorDashboard";
+import ManagerDashboard from "@/components/ManagerDashboard";
 
-export type Page = "home" | "courses" | "webinars" | "profile" | "adaptation" | "instructions";
+export type Page = "home" | "courses" | "webinars" | "profile" | "adaptation" | "instructions" | "mentor" | "manager";
 
 export default function Index() {
   const [activePage, setActivePage] = useState<Page>("home");
@@ -20,6 +22,8 @@ export default function Index() {
       case "profile": return <ProfilePage />;
       case "adaptation": return <AdaptationPage />;
       case "instructions": return <InstructionsPage />;
+      case "mentor": return <MentorDashboard />;
+      case "manager": return <ManagerDashboard />;
       default: return <HomePage setPage={setActivePage} />;
     }
   };
@@ -27,7 +31,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar activePage={activePage} setPage={setActivePage} />
-      <main className="animate-fade-in">
+      <main className="animate-fade-in" key={activePage}>
         {renderPage()}
       </main>
     </div>

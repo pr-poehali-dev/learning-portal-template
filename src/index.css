@@ -13,45 +13,45 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 235 85% 60%;
+    --primary: 0 82% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 262 80% 62%;
+    --secondary: 0 70% 35%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 93%;
-    --muted-foreground: 220 15% 55%;
+    --muted: 0 8% 94%;
+    --muted-foreground: 220 15% 50%;
 
-    --accent: 195 90% 50%;
+    --accent: 14 90% 52%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 88%;
-    --input: 220 20% 88%;
-    --ring: 235 85% 60%;
+    --border: 0 10% 88%;
+    --input: 0 10% 88%;
+    --ring: 0 82% 45%;
 
     --radius: 1rem;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 235 85% 60%;
+    --sidebar-primary: 0 82% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 25% 97%;
+    --sidebar-accent: 0 8% 97%;
     --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 220 20% 88%;
-    --sidebar-ring: 235 85% 60%;
+    --sidebar-border: 0 10% 88%;
+    --sidebar-ring: 0 82% 45%;
 
     --gradient-1: linear-gradient(
       135deg,
-      #5b6ef5 0%,
-      #9b59f5 50%,
-      #3ecfea 100%
+      #d01a1a 0%,
+      #e8402a 60%,
+      #f97316 100%
     );
-    --gradient-2: linear-gradient(135deg, #f97316 0%, #f59b3e 100%);
+    --gradient-2: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
     --gradient-3: linear-gradient(135deg, #10b981 0%, #3ecfea 100%);
-    --gradient-4: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+    --gradient-4: linear-gradient(135deg, #b91c1c 0%, #d01a1a 100%);
   }
 }
 
@@ -102,7 +102,7 @@
   }
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(91, 110, 245, 0.15);
+    box-shadow: 0 20px 40px rgba(208, 26, 26, 0.12);
   }
 
   .nav-link {
